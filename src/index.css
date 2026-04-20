@@ -58,6 +58,82 @@ body {
   margin-top: 0.65rem;
 }
 
+.header-session-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-top: 0.65rem;
+}
+
+.header-session-meta {
+  color: #d6ffe5;
+  font-size: 0.92rem;
+}
+
+.header-session-left {
+  display: grid;
+  gap: 0.25rem;
+  min-width: 220px;
+}
+
+.header-session-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.session-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 12px;
+  border: 1px solid #ffffff55;
+  background: rgba(255, 255, 255, 0.12);
+  max-width: 420px;
+}
+
+.session-chip-text {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.session-chip-text strong {
+  color: #fff;
+  line-height: 1.1;
+}
+
+.session-chip-text .muted {
+  color: #d6ffe5;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.18);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid #ffffff55;
+  flex: 0 0 auto;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar span {
+  font-weight: 900;
+  color: #fff;
+}
+
 .header-role-label {
   font-size: 0.72rem;
   text-transform: uppercase;
@@ -132,6 +208,227 @@ button {
   display: grid;
   gap: 1rem;
   background: #fff;
+}
+
+/* ——— Home / hero page ——— */
+.home-screen {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero {
+  border: 1px solid #bde7cb;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f7fff9, #ffffff);
+  padding: 1.1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 980px) {
+  .hero {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: start;
+  }
+}
+
+.hero-kicker {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #118847;
+}
+
+.hero-title {
+  margin: 0 0 0.6rem;
+  font-size: 1.6rem;
+  color: #0d6835;
+}
+
+.hero-sub {
+  margin: 0 0 0.9rem;
+  color: #56886b;
+  line-height: 1.55;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid #bde7cb;
+  background: #f0fff5;
+  color: #0d6835;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.hero-right {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.hero-card {
+  border: 1px solid #bde7cb;
+  border-radius: 12px;
+  background: #fff;
+  padding: 0.9rem;
+}
+
+.hero-card h3 {
+  margin: 0 0 0.6rem;
+}
+
+.hero-flow {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #237548;
+  line-height: 1.55;
+}
+
+.hero-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #237548;
+  line-height: 1.55;
+}
+
+.home-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+/* ——— Login screen ——— */
+.login-screen {
+  display: grid;
+  gap: 1rem;
+}
+
+.login-hero {
+  text-align: center;
+  padding: 0.75rem 0.5rem;
+}
+
+.store-title {
+  margin: 0;
+  font-size: 2.1rem;
+  letter-spacing: 0.02em;
+}
+
+.login-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.emp-tile {
+  text-align: left;
+  background: #fff;
+  color: #0d6835;
+  border: 2px solid #bde7cb;
+  border-radius: 14px;
+  padding: 1.35rem 1.5rem;
+  display: grid;
+  gap: 0.65rem;
+  min-height: 170px;
+  width: 100%;
+}
+
+.emp-tile:hover {
+  border-color: #118847;
+  background: #f0fff5;
+}
+
+.emp-tile.admin {
+  border-color: #2a6b4a;
+}
+
+.emp-tile-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.emp-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.emp-emoji {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.emp-name {
+  font-size: 1.6rem;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.emp-id {
+  font-size: 0.82rem;
+  font-weight: 900;
+  color: #118847;
+  border: 1px solid #bde7cb;
+  background: #f7fff9;
+  border-radius: 999px;
+  padding: 0.18rem 0.55rem;
+}
+
+.emp-tile-mid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.emp-tile.size-xl {
+  min-height: 210px;
+}
+
+.emp-tile.size-lg {
+  min-height: 190px;
+}
+
+.emp-tile.size-md {
+  min-height: 170px;
+}
+
+.emp-tile-bottom {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.emp-last {
+  color: #0d6835;
+  font-size: 1rem;
 }
 
 .grid {
@@ -1000,6 +1297,29 @@ kbd {
   border: 2px solid #118847;
 }
 
+.pos-top-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem;
+}
+
+.coupon-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 10px;
+  border: 1px dashed #3d6b52;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.coupon-chip code {
+  background: #243d30;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
+
 .pos-ticket .list li {
   border-color: #2f523f;
 }
@@ -1323,4 +1643,300 @@ kbd {
 
 .card-stat .trend-badge {
   justify-self: start;
+}
+
+/* ——— Public marketing landing (pre-auth flow) ——— */
+.marketing-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #144d2d;
+  background: linear-gradient(180deg, #f4fff6 0%, #ffffff 38%);
+}
+
+.marketing-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid #bde7cb;
+  backdrop-filter: blur(8px);
+}
+
+.marketing-nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.65rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+.marketing-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: auto;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+.marketing-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #118847, #2ecf7a);
+  box-shadow: 0 2px 8px rgba(17, 136, 71, 0.35);
+}
+
+.marketing-brand-text {
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: #0d6835;
+}
+
+.marketing-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.5rem;
+}
+
+.marketing-link {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #237548;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 8px;
+}
+
+.marketing-link:hover {
+  background: #e8fff0;
+  color: #0d6835;
+}
+
+.marketing-cta {
+  font: inherit;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 0.88rem;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  border: none;
+  color: #fff;
+  background: #118847;
+  box-shadow: 0 2px 0 #0a5c30;
+}
+
+.marketing-cta:hover {
+  filter: brightness(1.05);
+}
+
+.marketing-main {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2.5rem;
+}
+
+.marketing-hero {
+  scroll-margin-top: 5.5rem;
+  padding: 0.5rem 0 1.5rem;
+}
+
+.marketing-hero-grid {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .marketing-hero-grid {
+    grid-template-columns: 1.25fr 0.95fr;
+  }
+}
+
+.marketing-kicker {
+  margin: 0 0 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #118847;
+}
+
+.marketing-h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.65rem, 3.5vw, 2.25rem);
+  line-height: 1.2;
+  color: #0d6835;
+}
+
+.marketing-lead {
+  margin: 0 0 1.1rem;
+  color: #3d6b52;
+  line-height: 1.6;
+  font-size: 1.02rem;
+}
+
+.marketing-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.marketing-primary,
+.marketing-secondary {
+  font: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 10px;
+}
+
+.marketing-primary {
+  border: none;
+  color: #fff;
+  background: #118847;
+}
+
+.marketing-primary:hover {
+  filter: brightness(1.06);
+}
+
+.marketing-secondary {
+  border: 1px solid #bde7cb;
+  color: #0d6835;
+  background: #fff;
+}
+
+.marketing-secondary:hover {
+  background: #f0fff5;
+}
+
+.marketing-tags {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.marketing-tags li {
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid #bde7cb;
+  background: #f7fff9;
+  color: #237548;
+}
+
+.marketing-hero-card {
+  border: 1px solid #bde7cb;
+  border-radius: 14px;
+  padding: 1.1rem 1.15rem;
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(17, 136, 71, 0.08);
+}
+
+.marketing-card-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  color: #0d6835;
+}
+
+.marketing-steps {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: #237548;
+  line-height: 1.55;
+}
+
+.marketing-section {
+  scroll-margin-top: 5.5rem;
+  padding: 2rem 0;
+  border-top: 1px solid #d8eee0;
+}
+
+.marketing-section-alt {
+  background: linear-gradient(90deg, #f7fff9, transparent);
+  margin: 0 -1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border-radius: 12px;
+  border-top: none;
+}
+
+.marketing-section-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+  color: #0d6835;
+}
+
+.marketing-prose {
+  margin: 0 0 0.65rem;
+  max-width: 720px;
+  line-height: 1.6;
+  color: #3d6b52;
+}
+
+.marketing-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.marketing-feature {
+  border: 1px solid #bde7cb;
+  border-radius: 12px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.marketing-feature h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.02rem;
+  color: #118847;
+}
+
+.marketing-feature p {
+  margin: 0;
+  color: #56886b;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.marketing-footer {
+  margin-top: auto;
+  padding: 1rem 1.25rem 1.5rem;
+  text-align: center;
+  font-size: 0.86rem;
+  color: #56886b;
+  border-top: 1px solid #d8eee0;
+  background: #f7fff9;
+}
+
+.staff-entry {
+  display: grid;
+  gap: 1rem;
+}
+
+.staff-entry-card {
+  border: 1px solid #bde7cb;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f7fff9, #ffffff);
+  padding: 1.15rem 1.25rem;
 }
